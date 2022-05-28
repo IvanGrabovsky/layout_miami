@@ -1,9 +1,21 @@
 .logo {
+
   &__image {
-    height: 48px;
+    height: 16px;
+    width: 130px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     @include onDesktop {
-      height: 80px;
+      height: 24px;
+      width: 190px;
+    }
+
+    @include onTablet {
+      height: 24px;
+      width: 190px;
     }
   }
 }

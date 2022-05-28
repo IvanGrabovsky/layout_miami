@@ -1,11 +1,16 @@
 .icon {
   display: block;
-  width: 100%;
-  padding-bottom: 100%;
+  width: $iconWidthMobile;
+  height: $iconWidthMobile;
 
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+  @include onTablet {
+    width: $iconWidthTablet;
+    height: $iconWidthTablet;
+  }
 
   &--menu {
     background-image: url(../images/menu.svg);

@@ -1,0 +1,12 @@
+.recommended {
+  &__content {
+    display: grid;
+    justify-content: center;
+    row-gap: 48px;
+
+    @include onDesktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+    }
+  }
+}
